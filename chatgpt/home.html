@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot by Virtuality's Studio</title>
+    <!-- Lien Google Fonts pour les icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style_home.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Header Poli -->
+        <h2 class="title">Bonjours</h2>
+        <h4 class="subtitle">comment puis je t'aider?</h4>
+
+        <!-- Suggestion List -->
+        <ul class="suggestion-list">
+            <li class="suggestion">
+                <h4 class="text">Aide moi a creer un jeux avec mais amis.</h4>
+                <span class="icon material-symbols-rounded">draw</span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Comme je peut devenire meilleur en codage?</h4>
+                <span class="icon material-symbols-rounded">html</span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Quelle et la distance entre Paris et Marseille</h4>
+                <span class="icon material-symbols-rounded">explore</span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Peut tu m'aider a creer un script en HTML pour mon projet?</h4>
+                <span class="icon material-symbols-rounded">code</span>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Chat List / Contrainer -->
+    <div class="chat-list"></div>
+
+    <!-- Zone de saisie -->
+    <div class="typing-area">
+        <form action="#" class="typing-form">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Ecrivez votre text ici" 
+                class="typing-input" required>
+                <button class="icon material-symbols-rounded">send</button>
+            </div>
+            <div class="action-buttons">
+                <span id="toggle-theme-button" class="icon material-symbols-rounded">light_mode</span>
+                <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+            </div>
+        </form>
+        <p class="disclaimer-text">
+            Virtuality peut afficher des informations inexactes, y compris sur des personnes, alors vérifiez ses réponses.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
